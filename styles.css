@@ -1,0 +1,1011 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+
+
+/* Resetting default margins and paddings for all elements, 
+   and setting box-sizing to border-box */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensuring the HTML and body elements take up the full height 
+   of the viewport and disabling horizontal overflow */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Applying a small-caps font variant to the body */
+body {
+    font-variant: small-caps;
+}
+
+/* Header styles: fixed position at the top, full width, 
+   transparent background, and a white bottom border */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    border-bottom: 2px solid white;
+}
+
+/* Navigation bar styles: centered list items with padding */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* List item styles: horizontal margin */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Link styles: white color, no underline, and font size */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    
+}
+
+/* Link hover effect: underline */
+nav ul li a:hover {
+    text-decoration: overline;
+}
+
+/* Intro text styles: left margin */
+.intro-text {
+    margin-left: 20px; 
+}
+
+/* H2 inside intro text: font size and bottom margin */
+.intro-text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+/* H1 inside intro text: larger font size and bold weight */
+.intro-text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+/* Page container: center text and full viewport height */
+.page {
+    text-align: center;
+    height: 100vh;
+}
+
+/* Background image container: center content, white text,
+   and full viewport height */
+.background-image {
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Fullscreen background for home section: specific image,
+   covering the entire viewport */
+.fullscreen-background-home {
+    background: url('https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* H1 inside background image container: font size,
+   center content, and white color */
+.background-image h1 {
+    font-size: 48px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Button inside background image container: orange background,
+   white text, padding, rounded corners, transition effects, 
+   and positioned at the bottom-right */
+.background-image .btn {
+    background-color: #5f5f5e; /* Orange color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute; 
+    bottom: 50px; 
+    right: 50px; 
+}
+
+/* Button hover effect: different background color */
+.background-image .btn:hover {
+    background-color: #c7c3be;
+}
+
+/* Adding spacing between sections */
+section {
+    margin: 20px 0;
+}
+
+
+/*work page*/
+.background-image-work {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 50px; /* Adjust to avoid overlap with the header */
+}
+
+.fullscreen-background-work {
+    background: url('https://images.unsplash.com/photo-1541458673604-0857809d497c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image-work h1 {
+    font-weight: bold;
+    flex: 2;
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 0;
+    color: antiquewhite;
+    position: relative;
+    right: 600px;
+    top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.background-image-work h2 {
+    flex: 2;
+    text-align: left;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: -100px;
+    position: relative;
+    right: 480px; /* Change this value to move the <h2> to the right */
+    color: antiquewhite;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -180px;
+}
+
+.circle {
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    border-radius: 50%; /* Maintain perfect circle shape */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: -50px; /* Negative margin for overlapping */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+
+.circle:nth-child(1) {
+    z-index: 1;
+    margin-left: 0; /* First circle does not need negative margin */
+}
+
+.circle:nth-child(2) {
+    z-index: 2;
+}
+
+.circle:nth-child(3) {
+    z-index: 3;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: -50px;
+    left: 0; /* Adjust to position the label below the circle */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Add a black background with some transparency */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+
+/*----------------- advert page ----------------*/
+
+/* Fullscreen background settings for the advert section,
+   using a specific image, covering the entire viewport, and flexbox layout */
+   .fullscreen-background-advert, #advert, .advert-container {
+    background: url('https://images.unsplash.com/photo-1541458673604-0857809d497c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container for the advert section,
+   with padding, centered text, semi-transparent background,
+   margin, border radius, shadow, and max-width */
+#advert {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+/* Container for the advert section content,
+   with max-width and center alignment */
+.advert-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading within the advert container,
+   with font size, margin, and text color */
+.advert-container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fbf4f4;
+}
+
+/* Grid layout for image items,
+   with dynamic column sizes and gap between items */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for each image item within the grid,
+   with border radius, overflow, shadow, and transition */
+.image-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image within each image item,
+   with full width, specific height, block display, and transition */
+.image-item img {
+    width: 100%;
+    height: 490px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for each image item,
+   scaling and shadow enhancements */
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the image within each image item,
+   with additional scaling */
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Back button styling,
+   used on advert, branding, and illustration pages */
+.back-button {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the back button,
+   changing the background color */
+.back-button:hover {
+    background-color: #575757;
+}
+
+
+
+
+
+/* --------------Branding page -------------*/
+
+/* Fullscreen background settings for the branding section,
+   using a specific image, covering the entire viewport, and flexbox layout */
+   .fullscreen-background-branding, #branding, .branding-container {
+    background: url('https://images.unsplash.com/photo-1541458673604-0857809d497c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container for the branding section,
+   with padding, centered text, semi-transparent background,
+   margin, border radius, shadow, and max-width */
+#branding {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+/* Container for the branding section content,
+   with max-width and center alignment */
+.branding-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading within the branding container,
+   with font size, margin, and text color */
+.branding-container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Grid layout for image items,
+   with dynamic column sizes and gap between items */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for each image item within the grid,
+   with border radius, overflow, shadow, and transition */
+.image-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image within each image item,
+   with full width, automatic height, block display, and transition */
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for each image item,
+   scaling and shadow enhancements */
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the image within each image item,
+   with additional scaling */
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+/*--------------------- illustration page ------------------*/
+
+/* Fullscreen background settings for the illustration section,
+   using a specific image, covering the entire viewport, and flexbox layout */
+   .fullscreen-background-illustration, #illustration, .illustration-container {
+    background: url('https://images.unsplash.com/photo-1541458673604-0857809d497c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container for the illustration section,
+   with padding, centered text, semi-transparent background,
+   margin, border radius, shadow, and max-width */
+#illustration {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+/* Container for the illustration section content,
+   with max-width and center alignment */
+.illustration-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading within the illustration container,
+   with font size, margin, and text color */
+.illustration-container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #eeeeee;
+}
+
+/* Grid layout for image items,
+   with dynamic column sizes and gap between items */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for each image item within the grid,
+   with border radius, overflow, shadow, and transition */
+.image-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image within each image item,
+   with size, block display, and transition */
+.image-item img {
+    width: 350px;
+    height: 470px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for each image item,
+   scaling and shadow enhancements */
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the image within each image item,
+   with additional scaling */
+.image-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+/*------------------services page----------------------*/
+
+
+/* Main container for the services section, 
+   setting text color, flexbox layout, height, and padding */
+   .services-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+/* Left section within the services container, 
+   with text alignment, relative positioning, and inline-block display */
+.services-left {
+    flex: 1;
+    text-align: left;
+    position: relative;
+    display: inline-block; /* Ensure inline-block for animation */
+}
+
+/* Heading within the left section, 
+   with text color, large font size, bold weight, top margin, 
+   relative positioning, smooth transition, and hover effects */
+.services-left h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: -300px;
+    position: relative; /* Ensure relative positioning for absolute positioning of letters */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for transform and text-shadow */
+    cursor: pointer; /* Show pointer cursor on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+/* Hover effect for the heading, 
+   moving the title up slightly and enhancing the shadow */
+.services-left h1:hover {
+    transform: translateY(-5px); /* Move title up slightly on hover */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Enhance shadow effect on hover */
+}
+
+/* Styling for each letter within the heading, 
+   with inline-block display and smooth transition */
+.services-left h1 span {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Hover effect for each letter within the heading, 
+   applying a bounce animation */
+.services-left h1:hover span {
+    animation: bounce 1s infinite; /* Apply bounce animation infinitely on hover */
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial and final position */
+    }
+    50% {
+        transform: translateY(-5px); /* Bounce up */
+    }
+}
+
+/* Paragraph within the right section, 
+   with text color, text alignment, font size, line height, 
+   relative positioning, and adjusted position */
+.services-right p {
+    color: rgb(250, 250, 250);
+    flex: 1;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.6;
+    position: relative; /* Ensure the element is positioned relative */
+    left: 300px; /* Change this value to move the <p> element to the right */
+    max-width: 70%;
+}
+
+/* Fullscreen background for the services section, 
+   setting a specific image, covering the entire viewport, and no repeat */
+.fullscreen-background-services {
+    background: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for the circle services, 
+   using flexbox layout, center alignment, 
+   with gap, positioning, and margin adjustments */
+.circleservices-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between circles as needed */
+    position: absolute;
+    bottom: 250px; /* Adjusted bottom position */
+    left: -18%; /* Moved a bit to the left */
+    width: 80%; /* Adjusted width for responsiveness */
+    margin-bottom: 20px; /* Additional bottom margin for spacing */
+}
+
+/* Styles for each circle within the container, 
+   with size, border radius, background settings, 
+   positioning, flexbox layout, and transition */
+.circleservices {
+    width: 200px; /* Adjust the size of the circles as needed */
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Hover effect for each circle, 
+   applying a bounce animation */
+.circleservices:hover {
+    animation: bounce 0.5s infinite; /* Apply bounce animation infinitely on hover */
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial and final position */
+    }
+    50% {
+        transform: translateY(-5px); /* Bounce up */
+    }
+}
+
+/* Styles for the label within each circle, 
+   with text color, background color, text size, weight, alignment, 
+   and positioning adjustments */
+.circleservices .label {
+    color: white; /* Adjust the text color as needed */
+    background-color: black;
+    font-size: 16px; /* Adjust the text size as needed */
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    bottom: -30px; /* Adjust the position of the label */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center horizontally */
+}
+
+
+
+/*-------------------about page-------------------------*/
+
+/* Sets the background of the about page to a specific image, 
+   ensuring it covers the entire viewport and does not repeat */
+   .fullscreen-background-about {
+    background: url('https://images.unsplash.com/photo-1535905496755-26ae35d0ae54?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Styles the main container for the about section, 
+   aligning items flexibly with padding and text color */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px; /* Increased top padding to bring the content down */
+    color: antiquewhite;
+}
+
+/* Styles the left section within the about container, 
+   aligning text to the left, adding top margin, and setting text color */
+.about-left {
+    flex: 2;
+    text-align: left;
+    margin-top: 50px; /* Additional margin to bring the content down */
+    color: antiquewhite;
+}
+
+/* Styles the heading within the left section, 
+   making it bold with a large font size, 
+   setting bottom margin, text color, and moving it to the right */
+.about-left h1 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 0;
+    color: antiquewhite;
+    position: relative; /* Add this line */
+    left: 20px; /* Adjust this value to move the <h1> to the right */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Styles the subheading within the left section, 
+   making it bold with a very large font size, 
+   setting font family, moving it to the right and up */
+.about-left h2 {
+    font-weight: bold;
+    font-size: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: -30px;
+    position: relative;
+    left: 160px; /* Adjust this value to move the <h2> to the right */
+    color: antiquewhite;
+}
+
+/* Styles the paragraph within the left section, 
+   adding top margin, setting line height and font size, 
+   making the paragraph narrower, changing text color, 
+   and moving it to the right and up */
+.about-left p {
+    margin-top: 20px; /* Add a gap between the title and paragraph */
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    max-width: 70%; /* Make the paragraph narrower */
+    color: antiquewhite;
+    position: relative;
+    left: 20px; /* Adjust this value to move the paragraph to the right */
+    top: -30px; /* Adjust this value to move the paragraph up */
+}
+
+/* Styles the right section within the about container, 
+   aligning items centrally with padding and top margin */
+.about-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 50px; /* Additional margin to align with the left content */
+}
+
+/* Styles the image within the right section, 
+   setting its width and height, adjusting background size and position, 
+   adding an optional border, and setting the background image */
+.about-image {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: 550px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff; /* Optional: Add a border */
+    background-image: url('img/n2.jpg');
+}
+
+
+
+
+/* --------------contact page-------------------- */
+
+/* Sets the background of the contact page to a specific image, 
+   ensuring it covers the entire viewport and does not repeat */
+   .fullscreen-background-contact {
+    background: url('https://images.unsplash.com/photo-1623658962582-a09214e103e6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Styles the main container for the contact section, 
+   making it semi-transparent with padding, grid layout, and shadow */
+.contact_container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 30% 70%; /* Adjusted width percentages */
+    gap: 4rem;
+    height: 70vh;
+    margin: 5rem auto 7rem; /* Adjusted margin */
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles the aside section within the contact container, 
+   making it semi-transparent with padding and rounded corners */
+.contact_aside {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    border-radius: 1rem;
+    grid-template-columns: 30% 70%; /* Adjusted width percentages */
+}
+
+/* Styles the container for the google map, adjusting its width and height, 
+   and centering it with some margin */
+.map-container {
+    width: 80%; /* Adjust the width */
+    height: 50vh; /* Adjust the height  */
+    margin: 20px auto; /* Center the map horizontally with some margin */
+}
+
+/* Styles the heading within the contact aside, aligning text to the left, 
+   adding bottom margin, and changing the text color */
+.contact_aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+}
+
+/* Styles the paragraphs within the contact aside, 
+   changing font size, adding bottom margin, and changing the text color */
+.contact_aside p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    color: antiquewhite;
+}
+
+/* Styles the list items within the contact details section, 
+   aligning items in a row with some gap, centering them vertically, 
+   adding bottom margin, and changing the text color */
+.contact_details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+}
+
+/* Styles the social icons container, aligning icons in a row with some gap, 
+   and adding top margin */
+.contact_socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+/* Styles the individual social icons, making them semi-transparent, 
+   adding padding, making them circular, setting font size, 
+   and changing the text color */
+.contact_socials a, h5 {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.1rem;
+    border-radius: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    transition: var(--transition);
+    color: antiquewhite;
+}
+
+/* Adds a hover effect to the social icons, 
+   changing the background color */
+.contact_socials a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles the form within the contact container, 
+   arranging elements in a column */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles the name input fields within the form, 
+   aligning them in a row with some gap and adding bottom margin */
+.form_name {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Styles the text, email inputs, and textarea fields, 
+   making them full-width, adding padding, 
+   making them semi-transparent with rounded corners and no border, 
+   changing the text color, and adding bottom margin */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Allows vertical resizing of the textarea */
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Styles the submit button within the form, 
+   making it responsive to the content width, 
+   changing cursor on hover, adding top margin, 
+   setting background and text color, removing border, 
+   adding padding and rounded corners, and setting transition effect */
+.contact_form .btn {
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+    background: rgb(182, 135, 18);
+    color: antiquewhite;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Adds a hover effect to the submit button, 
+   changing the background color when cursor passes by it changes color */
+   .contact_form .btn:hover {
+    background-color: rgb(41, 114, 163);
+}
